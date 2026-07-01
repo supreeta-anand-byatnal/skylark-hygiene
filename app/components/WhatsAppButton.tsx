@@ -19,7 +19,7 @@ export default function WhatsAppButton() {
         href={emailHref}
         target={isMobile ? undefined : "_blank"}
         rel={isMobile ? undefined : "noopener noreferrer"}
-        className="bg-[#1a5c3a] hover:bg-[#154f32] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 active:scale-105"
+        className="bg-[#5c1010] hover:bg-[#4a0d0d] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 active:scale-105"
         aria-label="Send Email"
       >
         <svg
