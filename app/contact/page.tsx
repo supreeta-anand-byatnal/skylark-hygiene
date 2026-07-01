@@ -115,7 +115,7 @@ export default function ContactPage() {
                     <a
                       key={product}
                       href={`https://wa.me/919663807006?text=Hi, I'm interested in ${product}. Please share details and pricing.`}
-                      className="border border-gray-300 text-gray-700 px-3 py-1.5 rounded-full text-sm hover:border-[#1a5c3a] hover:text-[#1a5c3a] transition"
+                      className="border border-gray-300 text-gray-700 px-3 py-1.5 rounded-full text-sm hover:border-[#1a5c3a] hover:text-[#1a5c3a] active:border-[#1a5c3a] active:text-[#1a5c3a] active:bg-[#1a5c3a]/10 transition"
                     >
                       {product}
                     </a>

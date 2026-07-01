@@ -121,7 +121,7 @@ export default function Home() {
               <Link
                 key={cat.name}
                 href="/products"
-                className="group border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-[#1a5c3a]/30 transition"
+                className="group border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-[#1a5c3a]/30 active:shadow-lg active:border-[#1a5c3a]/30 transition"
               >
                 <div className="text-3xl mb-3">{cat.icon}</div>
                 <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[#1a5c3a] transition">

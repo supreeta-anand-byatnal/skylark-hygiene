@@ -332,7 +332,7 @@ export default function ProductsPage() {
                 <a
                   key={product.id}
                   href={`#${product.id}`}
-                  className="text-sm font-medium px-4 py-2 rounded-full bg-[#1a5c3a]/10 text-[#1a5c3a] hover:bg-[#1a5c3a] hover:text-white transition whitespace-nowrap"
+                  className="text-sm font-medium px-4 py-2 rounded-full bg-[#1a5c3a]/10 text-[#1a5c3a] hover:bg-[#1a5c3a] hover:text-white active:bg-[#1a5c3a] active:text-white transition whitespace-nowrap"
                 >
                   {product.name}
                 </a>
