@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12">
+    <footer className="bg-[#5c1010] text-white/80 py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -13,7 +13,7 @@ export default function Footer() {
               housekeeping products for offices, hospitals, apartments, hotels
               and industries.
             </p>
-            <p className="text-sm mt-3 text-slate-400">Bangalore, India</p>
+            <p className="text-sm mt-3 text-white/50">Bangalore, India</p>
           </div>
 
           {/* Products */}
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-700 mt-10 pt-6 text-center text-sm text-slate-500">
+        <div className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-white/50">
           © {new Date().getFullYear()} Skylark Hygiene Solutions. All rights reserved.
         </div>
       </div>
