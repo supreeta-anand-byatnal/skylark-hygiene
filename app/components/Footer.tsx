@@ -64,7 +64,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-white/50">
-          © {new Date().getFullYear()} Skylark Hygiene Solutions. All rights reserved.
+          <p>GST: 29AYMPB1472F2ZG</p>
+          <p className="mt-2">© {new Date().getFullYear()} Skylark Hygiene Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

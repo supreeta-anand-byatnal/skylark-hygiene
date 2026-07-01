@@ -108,6 +108,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trusted By */}
+      <section className="py-12 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-sm text-gray-400 uppercase tracking-wider font-semibold mb-6">Trusted by 100+ businesses since 2012</p>
+          <div className="flex flex-wrap justify-center gap-8 text-gray-500 text-sm">
+            <span className="flex items-center gap-2">🏢 Corporate Offices</span>
+            <span className="flex items-center gap-2">🏥 Hospitals & Clinics</span>
+            <span className="flex items-center gap-2">🏨 Hotels & Resorts</span>
+            <span className="flex items-center gap-2">🏬 Shopping Malls</span>
+            <span className="flex items-center gap-2">🏫 Educational Institutions</span>
+            <span className="flex items-center gap-2">🏭 Industries</span>
+          </div>
+        </div>
+      </section>
+
       {/* Product Categories */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
