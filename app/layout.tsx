@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Skylark Hygiene Solutions | Commercial Hygiene Products - Bangalore",
   description:
-    "Supplying dustbins, dispensers, hand dryers, air curtains, housekeeping trolleys and hygiene solutions for offices, hospitals, apartments, hotels and industries in Bangalore.",
+    "Supplying dustbins, dispensers, hand dryers, air curtains, housekeeping trolleys and hygiene solutions for offices, hospitals, apartments, hotels and industries across India.",
   metadataBase: new URL("https://skylarkhygiene.com"),
   openGraph: {
     title: "Skylark Hygiene Solutions",

@@ -99,6 +99,11 @@ export default function Home() {
                 Call +91 96638 07006
               </a>
             </div>
+            <div className="flex flex-wrap gap-4 mt-6 text-sm text-green-200">
+              <span className="border border-green-200/40 px-3 py-1 rounded-full">👩‍💼 Woman-Owned Business</span>
+              <span className="border border-green-200/40 px-3 py-1 rounded-full">📅 Since 2012</span>
+              <span className="border border-green-200/40 px-3 py-1 rounded-full">🇮🇳 Pan India Delivery</span>
+            </div>
           </div>
         </div>
       </section>

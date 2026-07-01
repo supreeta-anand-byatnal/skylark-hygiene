@@ -68,11 +68,29 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#1a5c3a]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl">✉️</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-slate-800">Email</h3>
+                    <a
+                      href="mailto:sales@skylarkhygiene.com"
+                      className="text-[#1a5c3a] hover:underline font-medium"
+                    >
+                      sales@skylarkhygiene.com
+                    </a>
+                    <p className="text-gray-500 text-sm mt-1">
+                      For detailed enquiries and documentation
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-[#1a5c3a]/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl">📍</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-800">Location</h3>
-                    <p className="text-gray-600">No.24, Annapoorna 2nd Main, 2nd Cross,<br/>Vivekananda Nagar, Kathriguppe,<br/>BSK 3rd Stage, Bangalore - 560 085</p>
+                    <p className="text-gray-600">No 24, Annapoorna, 2nd Main, 2nd Cross,<br/>Kathriguppe Main Rd, Banashankari 3rd Stage,<br/>Bengaluru, Karnataka 560085</p>
                     <p className="text-gray-500 text-sm mt-1">
                       Serving Pan India
                     </p>
@@ -212,6 +230,28 @@ export default function ContactPage() {
               </form>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Map */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-2xl font-bold text-slate-800 mb-6 text-center">Find Us</h2>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6192952349934!2d77.551971175974!3d12.932172787379562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2629c781e6fac9c7%3A0xfb33c739f3f58764!2sSkylark%20Hygiene%20Solutions!5e0!3m2!1sen!2sin!4v1782934002517!5m2!1sen!2sin"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Skylark Hygiene Solutions - Google Maps"
+            />
+          </div>
+          <p className="text-center text-gray-500 text-sm mt-4">
+            Skylark Hygiene Solutions, No 24, Annapoorna, 2nd main, 2nd cross, Kathriguppe Main Rd, Banashankari 3rd Stage, Bengaluru, Karnataka 560085
+          </p>
         </div>
       </section>
     </div>

@@ -20,12 +20,12 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-3">Products</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/products#dispensers" className="hover:text-white transition">Soap & Paper Dispensers</Link></li>
-              <li><Link href="/products#dryers" className="hover:text-white transition">Hand Dryers</Link></li>
-              <li><Link href="/products#bins" className="hover:text-white transition">Dustbins & Trash Bins</Link></li>
+              <li><Link href="/products#soap-dispensers" className="hover:text-white transition">Soap & Paper Dispensers</Link></li>
+              <li><Link href="/products#hand-dryers" className="hover:text-white transition">Hand Dryers</Link></li>
+              <li><Link href="/products#ss-hygiene-bins" className="hover:text-white transition">Dustbins & Trash Bins</Link></li>
               <li><Link href="/products#trolleys" className="hover:text-white transition">Housekeeping Trolleys</Link></li>
-              <li><Link href="/products#aircurtains" className="hover:text-white transition">Air Curtains</Link></li>
-              <li><Link href="/products#aerosol" className="hover:text-white transition">Aerosol Dispensers</Link></li>
+              <li><Link href="/products#air-curtains" className="hover:text-white transition">Air Curtains</Link></li>
+              <li><Link href="/products#aerosol-dispensers" className="hover:text-white transition">Aerosol Dispensers</Link></li>
             </ul>
           </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="tel:+919663807006" className="hover:text-white transition">
-                  📞 +91 96638 07080
+                  📞 +91 96638 07006
                 </a>
               </li>
               <li>
@@ -58,7 +58,7 @@ export default function Footer() {
                   ✉️ sales@skylarkhygiene.com
                 </a>
               </li>
-              <li>📍 No.24, Annapoorna 2nd Main, 2nd Cross, Vivekananda Nagar, Kathriguppe, BSK 3rd Stage, Bangalore - 560 085</li>
+              <li>📍 No 24, Annapoorna, 2nd Main, 2nd Cross, Kathriguppe Main Rd, Banashankari 3rd Stage, Bengaluru, Karnataka 560085</li>
             </ul>
           </div>
         </div>
