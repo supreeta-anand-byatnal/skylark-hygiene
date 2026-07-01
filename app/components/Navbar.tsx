@@ -56,12 +56,21 @@ export default function Navbar() {
           })}
         </div>
 
-        <a
-          href="https://wa.me/919663807006"
-          className="hidden md:inline-block bg-[#1a5c3a] text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-[#154f32] transition"
-        >
-          Get Quote
-        </a>
+        <div className="hidden md:flex items-center gap-4">
+          <a
+            href="/skylark-catalogue.pdf"
+            download
+            className="border border-[#1a5c3a] text-[#1a5c3a] text-sm px-4 py-2 rounded-lg font-medium hover:bg-[#1a5c3a] hover:text-white transition"
+          >
+            📥 Download Brochure
+          </a>
+          <a
+            href="https://wa.me/919663807006"
+            className="bg-[#1a5c3a] text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-[#154f32] transition"
+          >
+            Get Quote
+          </a>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -99,8 +108,15 @@ export default function Navbar() {
             );
           })}
           <a
+            href="/skylark-catalogue.pdf"
+            download
+            className="block mt-3 text-center border border-[#1a5c3a] text-[#1a5c3a] text-sm px-4 py-2.5 rounded-lg font-medium"
+          >
+            📥 Download Brochure
+          </a>
+          <a
             href="https://wa.me/919663807006"
-            className="block mt-3 text-center bg-[#1a5c3a] text-white text-sm px-4 py-2.5 rounded-lg font-medium"
+            className="block mt-2 text-center bg-[#1a5c3a] text-white text-sm px-4 py-2.5 rounded-lg font-medium"
           >
             Get Quote on WhatsApp
           </a>

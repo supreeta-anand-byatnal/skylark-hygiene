@@ -319,6 +319,13 @@ export default function ProductsPage() {
             Complete range of commercial hygiene and housekeeping products for
             offices, hospitals, hotels, apartments, and industries.
           </p>
+          <a
+            href="/skylark-catalogue.pdf"
+            download
+            className="inline-block mt-6 bg-white text-[#1a5c3a] px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition"
+          >
+            📥 Download PDF Brochure
+          </a>
         </div>
       </section>
 
