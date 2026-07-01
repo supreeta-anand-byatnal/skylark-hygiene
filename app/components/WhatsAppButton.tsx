@@ -1,12 +1,24 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export default function WhatsAppButton() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
+  }, []);
+
+  const emailHref = isMobile
+    ? "mailto:sales@skylarkhygiene.com?subject=Product%20Enquiry&body=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20hygiene%20products."
+    : "https://mail.google.com/mail/?view=cm&to=sales@skylarkhygiene.com&su=Product%20Enquiry&body=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20hygiene%20products.";
+
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <a
-        href="https://mail.google.com/mail/?view=cm&to=sales@skylarkhygiene.com&su=Product%20Enquiry&body=Hi%2C%20I%27d%20like%20to%20enquire%20about%20your%20hygiene%20products."
-        target="_blank"
-        rel="noopener noreferrer"
+        href={emailHref}
+        target={isMobile ? undefined : "_blank"}
+        rel={isMobile ? undefined : "noopener noreferrer"}
         className="bg-[#1a5c3a] hover:bg-[#154f32] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 active:scale-105"
         aria-label="Send Email"
       >
