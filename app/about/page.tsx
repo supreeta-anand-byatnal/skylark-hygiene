@@ -39,9 +39,10 @@ export default function AboutPage() {
           <div className="prose prose-lg max-w-none text-gray-700">
             <h2 className="text-2xl font-bold text-slate-800">Who We Are</h2>
             <p>
-              Skylark Hygiene Solutions is a Bangalore-based supplier of
-              commercial hygiene and housekeeping products. We serve offices,
-              hospitals, hotels, apartments, industries, and public facilities
+              Skylark Hygiene Solutions is a <strong>woman-owned business</strong> based
+              in Bangalore, supplying commercial hygiene and housekeeping
+              products <strong>since 2012</strong>. We serve offices, hospitals,
+              hotels, apartments, industries, and public facilities
               with high-quality products that maintain clean, healthy
               environments.
             </p>

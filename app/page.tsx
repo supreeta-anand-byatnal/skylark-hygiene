@@ -82,7 +82,7 @@ export default function Home() {
             <p className="text-xl text-green-100 leading-relaxed">
               Supplying dustbins, dispensers, hand dryers, air curtains,
               housekeeping trolleys and hygiene solutions for offices,
-              hospitals, apartments, hotels and industries across Bangalore.
+              hospitals, apartments, hotels and industries across India.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">

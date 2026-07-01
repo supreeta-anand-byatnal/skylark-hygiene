@@ -72,9 +72,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-800">Location</h3>
-                    <p className="text-gray-600">Bangalore, Karnataka, India</p>
+                    <p className="text-gray-600">No.24, Annapoorna 2nd Main, 2nd Cross,<br/>Vivekananda Nagar, Kathriguppe,<br/>BSK 3rd Stage, Bangalore - 560 085</p>
                     <p className="text-gray-500 text-sm mt-1">
-                      Serving all of Bangalore and Karnataka
+                      Serving Pan India
                     </p>
                   </div>
                 </div>

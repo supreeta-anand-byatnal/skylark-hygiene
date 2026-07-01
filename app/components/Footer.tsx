@@ -13,7 +13,7 @@ export default function Footer() {
               housekeeping products for offices, hospitals, apartments, hotels
               and industries.
             </p>
-            <p className="text-sm mt-3 text-white/50">Bangalore, India</p>
+            <p className="text-sm mt-3 text-white/50">Bangalore - 560 085, India</p>
           </div>
 
           {/* Products */}
@@ -53,7 +53,12 @@ export default function Footer() {
                   💬 WhatsApp Us
                 </a>
               </li>
-              <li>📍 Bangalore, Karnataka, India</li>
+              <li>
+                <a href="mailto:sales@skylarkhygiene.com" className="hover:text-white transition">
+                  ✉️ sales@skylarkhygiene.com
+                </a>
+              </li>
+              <li>📍 No.24, Annapoorna 2nd Main, 2nd Cross, Vivekananda Nagar, Kathriguppe, BSK 3rd Stage, Bangalore - 560 085</li>
             </ul>
           </div>
         </div>

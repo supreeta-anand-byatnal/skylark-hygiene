@@ -277,6 +277,21 @@ const catalogue = [
     ],
   },
   {
+    id: "shoecover-dispenser",
+    name: "Shoecover Dispenser",
+    icon: "🥿",
+    description:
+      "Automatic shoecover dispensers for hospitals, labs, cleanrooms, and hygiene-sensitive areas. Hands-free operation for quick shoe covering.",
+    models: [],
+    features: [
+      "Automatic hands-free dispensing",
+      "Suitable for hospitals & labs",
+      "Cleanroom compatible",
+      "High capacity refill rolls",
+      "Floor-standing design",
+    ],
+  },
+  {
     id: "consumables",
     name: "Consumables",
     icon: "📦",
