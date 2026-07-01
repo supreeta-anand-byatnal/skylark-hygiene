@@ -112,7 +112,11 @@ export default function ContactPage() {
                 Send an Enquiry
               </h2>
 
-              <form className="space-y-5">
+              <form action="https://api.web3forms.com/submit" method="POST" className="space-y-5">
+                <input type="hidden" name="access_key" value="66480bb4-c52c-4ad1-b1ea-d817a70d94fa" />
+                <input type="hidden" name="subject" value="New Enquiry from Skylark Hygiene Website" />
+                <input type="hidden" name="from_name" value="Skylark Hygiene Website" />
+                <input type="hidden" name="redirect" value="https://skylarkhygiene.com/contact?success=true" />
                 <div>
                   <label
                     htmlFor="name"
