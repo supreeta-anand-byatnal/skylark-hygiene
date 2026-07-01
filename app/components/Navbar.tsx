@@ -1,7 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const links = [
+    { href: "/", label: "Home" },
+    { href: "/products", label: "Products" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
+  ];
+
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
@@ -19,11 +31,26 @@ export default function Navbar() {
           <span className="font-bold text-lg text-[#1a5c3a]">Skylark Hygiene</span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
-          <Link href="/" className="hover:text-[#1a5c3a] transition">Home</Link>
-          <Link href="/products" className="hover:text-[#1a5c3a] transition">Products</Link>
-          <Link href="/about" className="hover:text-[#1a5c3a] transition">About</Link>
-          <Link href="/contact" className="hover:text-[#1a5c3a] transition">Contact</Link>
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+          {links.map((link) => {
+            const isActive =
+              link.href === "/"
+                ? pathname === "/"
+                : pathname.startsWith(link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={
+                  isActive
+                    ? "text-[#5c1010] font-bold"
+                    : "text-slate-700 hover:text-[#5c1010] transition"
+                }
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
 
         <a
