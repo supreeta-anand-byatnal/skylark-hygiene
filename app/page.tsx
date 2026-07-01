@@ -106,7 +106,7 @@ export default function Home() {
       {/* Product Categories */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-4">Our Product Catalogue</h2>
+          <h2 className="text-3xl font-bold text-center mb-4 text-[#1a5c3a]">Our Product Catalogue</h2>
           <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
             Commercial grade hygiene and housekeeping products for every workspace
           </p>
