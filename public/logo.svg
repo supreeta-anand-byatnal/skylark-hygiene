@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Diamond background -->
+  <rect x="29" y="29" width="142" height="142" rx="4" transform="rotate(45 100 100)" fill="white" stroke="#1a5c3a" stroke-width="2"/>
+  
+  <!-- Inner diamond border -->
+  <rect x="37" y="37" width="126" height="126" rx="3" transform="rotate(45 100 100)" fill="none" stroke="#1a5c3a" stroke-width="1" opacity="0.5"/>
+
+  <!-- Circular text path for tagline -->
+  <defs>
+    <path id="topArc" d="M 50,100 A 50,50 0 0,1 150,100" />
+    <path id="bottomArc" d="M 60,115 A 42,42 0 0,0 140,115" />
+  </defs>
+  
+  <text font-size="7.5" fill="#1a5c3a" font-family="Georgia, serif" font-style="italic">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">A healthy working environment for everyone</textPath>
+  </text>
+
+  <!-- Main SH Monogram -->
+  <g transform="translate(100, 100)">
+    <!-- Decorative S -->
+    <text x="-8" y="8" font-family="'Times New Roman', serif" font-size="52" font-weight="bold" fill="#1a5c3a" text-anchor="middle" style="font-style: italic;">S</text>
+    <!-- Decorative H overlapping -->
+    <text x="8" y="8" font-family="'Times New Roman', serif" font-size="52" font-weight="bold" fill="#2d7a4f" text-anchor="middle" style="font-style: italic;">H</text>
+  </g>
+
+  <!-- Leaf decorations left -->
+  <g transform="translate(55, 95)" fill="#2d7a4f">
+    <ellipse cx="0" cy="0" rx="3" ry="8" transform="rotate(-30)"/>
+    <ellipse cx="-4" cy="5" rx="2.5" ry="7" transform="rotate(-45)"/>
+    <ellipse cx="-7" cy="10" rx="2" ry="6" transform="rotate(-60)"/>
+  </g>
+  
+  <!-- Leaf decorations right -->
+  <g transform="translate(145, 95)" fill="#2d7a4f">
+    <ellipse cx="0" cy="0" rx="3" ry="8" transform="rotate(30)"/>
+    <ellipse cx="4" cy="5" rx="2.5" ry="7" transform="rotate(45)"/>
+    <ellipse cx="7" cy="10" rx="2" ry="6" transform="rotate(60)"/>
+  </g>
+
+  <!-- Small bird/leaf at top -->
+  <g transform="translate(100, 52)" fill="#8b1a1a">
+    <path d="M0,-4 C2,-6 5,-5 4,-2 C3,0 1,1 0,0 C-1,1 -3,0 -4,-2 C-5,-5 -2,-6 0,-4Z"/>
+  </g>
+
+  <!-- Bangalore text -->
+  <text x="100" y="148" font-size="7" fill="#8b1a1a" font-family="Georgia, serif" text-anchor="middle" letter-spacing="2" font-weight="bold">BANGALORE</text>
+</svg>

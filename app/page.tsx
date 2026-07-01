@@ -1,65 +1,190 @@
 import Image from "next/image";
+import Link from "next/link";
+
+const productCategories = [
+  {
+    name: "Aerosol Dispensers",
+    description: "Automatic air freshener dispensers for offices, lobbies, and restrooms.",
+    icon: "🌬️",
+  },
+  {
+    name: "Soap Dispensers",
+    description: "Manual and automatic soap dispensers for hygiene-conscious workplaces.",
+    icon: "🧴",
+  },
+  {
+    name: "Paper Towel Dispensers",
+    description: "Tissue and paper towel dispensers for restrooms and kitchens.",
+    icon: "🧻",
+  },
+  {
+    name: "Hand Dryers",
+    description: "High-speed automatic hand dryers for commercial restrooms.",
+    icon: "💨",
+  },
+  {
+    name: "Dustbins & Trash Bins",
+    description: "SS hygiene bins, garbage bins, and waste management solutions.",
+    icon: "🗑️",
+  },
+  {
+    name: "Air Curtains",
+    description: "Industrial air curtains for entrances to keep dust and insects out.",
+    icon: "🌀",
+  },
+  {
+    name: "Housekeeping Trolleys",
+    description: "SS trolleys and janitorial carts for hotels and hospitals.",
+    icon: "🛒",
+  },
+  {
+    name: "Shoe Shine Machines",
+    description: "Automatic shoe shine and polish machines for lobbies and offices.",
+    icon: "👞",
+  },
+  {
+    name: "Fly Catchers & Insect Killers",
+    description: "UV fly catchers and insect killer lights for food areas and kitchens.",
+    icon: "🪰",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="bg-white">
+      {/* Hero */}
+      <section className="bg-[#1a5c3a] text-white">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="flex items-center gap-6 mb-10">
+            <div className="w-[110px] h-[110px] flex-shrink-0 bg-white rounded-full shadow-lg overflow-hidden flex items-center justify-center">
+              <Image
+                src="/logo.png"
+                alt="Skylark Hygiene Solutions"
+                width={100}
+                height={100}
+                className="object-contain"
+                priority
+                unoptimized
+              />
+            </div>
+
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold text-white">
+                Skylark Hygiene Solutions
+              </h1>
+              <p className="text-green-200 mt-2 text-lg tracking-wide">
+                A healthy working environment for everyone
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-3xl">
+            <p className="text-xl text-green-100 leading-relaxed">
+              Supplying dustbins, dispensers, hand dryers, air curtains,
+              housekeeping trolleys and hygiene solutions for offices,
+              hospitals, apartments, hotels and industries across Bangalore.
+            </p>
+
+            <div className="flex flex-wrap gap-4 mt-8">
+              <a
+                href="https://wa.me/919663807006"
+                className="bg-white text-[#1a5c3a] hover:bg-green-50 px-6 py-3 rounded-lg font-semibold transition"
+              >
+                Get Quote on WhatsApp
+              </a>
+              <a
+                href="tel:+919663807006"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#1a5c3a] px-6 py-3 rounded-lg font-medium transition"
+              >
+                Call +91 96638 07006
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Categories */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4">Our Product Catalogue</h2>
+          <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
+            Commercial grade hygiene and housekeeping products for every workspace
           </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {productCategories.map((cat) => (
+              <Link
+                key={cat.name}
+                href="/products"
+                className="group border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-[#1a5c3a]/30 transition"
+              >
+                <div className="text-3xl mb-3">{cat.icon}</div>
+                <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[#1a5c3a] transition">
+                  {cat.name}
+                </h3>
+                <p className="text-gray-500 mt-2 text-sm leading-relaxed">
+                  {cat.description}
+                </p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/products"
+              className="inline-block bg-[#1a5c3a] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#154f32] transition"
+            >
+              View Full Catalogue →
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Why Us */}
+      <section className="bg-slate-50 py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12">Why Skylark?</h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: "✅", title: "Quality Products", desc: "Premium commercial-grade products from trusted manufacturers" },
+              { icon: "📦", title: "Bulk Supply", desc: "Large quantity orders for offices, hospitals & industries" },
+              { icon: "🏢", title: "Commercial Solutions", desc: "Tailored solutions for hotels, apartments & workplaces" },
+              { icon: "🚚", title: "Fast Delivery", desc: "Quick delivery across India" },
+            ].map((item) => (
+              <div key={item.title} className="text-center">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="font-bold text-slate-800 mb-2">{item.title}</h3>
+                <p className="text-gray-500 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#1a5c3a] text-white py-20">
+        <div className="max-w-4xl mx-auto text-center px-6">
+          <h2 className="text-3xl font-bold">Need a Quote?</h2>
+          <p className="mt-4 text-lg text-green-100">
+            Contact us for bulk orders and commercial enquiries.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://wa.me/919663807006"
+              className="bg-white text-[#1a5c3a] px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition"
+            >
+              WhatsApp Us
+            </a>
+            <a
+              href="tel:+919663807006"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#1a5c3a] px-6 py-3 rounded-lg font-medium transition"
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
