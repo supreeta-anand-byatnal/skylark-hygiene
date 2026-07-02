@@ -44,12 +44,12 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-3">Get In Touch</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="tel:+919663807006" className="hover:text-white transition">
+                <a href="tel:+919663807008" className="hover:text-white transition">
                   📞 +91 96638 07006
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/919663807006" className="hover:text-white transition">
+                <a href="https://wa.me/919663807008" className="hover:text-white transition">
                   💬 WhatsApp Us
                 </a>
               </li>

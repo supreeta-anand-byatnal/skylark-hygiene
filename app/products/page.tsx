@@ -397,7 +397,7 @@ export default function ProductsPage() {
                       ))}
                     </ul>
                     <a
-                      href={`https://wa.me/919663807006?text=Hi, I'm interested in ${product.name}. Please share details and pricing.`}
+                      href={`https://wa.me/919663807008?text=Hi, I'm interested in ${product.name}. Please share details and pricing.`}
                       className="inline-block mt-6 bg-[#1a5c3a] text-white text-sm px-5 py-2.5 rounded-lg font-medium hover:bg-[#154f32] transition"
                     >
                       Enquire on WhatsApp
@@ -422,13 +422,13 @@ export default function ProductsPage() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919663807006"
+              href="https://wa.me/919663807008"
               className="bg-[#1a5c3a] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#154f32] transition"
             >
               WhatsApp Us
             </a>
             <a
-              href="tel:+919663807006"
+              href="tel:+919663807008"
               className="border-2 border-[#1a5c3a] text-[#1a5c3a] px-6 py-3 rounded-lg font-medium hover:bg-[#1a5c3a] hover:text-white transition"
             >
               Call +91 96638 07006

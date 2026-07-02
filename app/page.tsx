@@ -87,13 +87,13 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4 mt-8">
               <a
-                href="https://wa.me/919663807006"
+                href="https://wa.me/919663807008"
                 className="bg-white text-[#1a5c3a] hover:bg-green-50 px-6 py-3 rounded-lg font-semibold transition"
               >
                 Get Quote on WhatsApp
               </a>
               <a
-                href="tel:+919663807006"
+                href="tel:+919663807008"
                 className="border-2 border-white text-white hover:bg-white hover:text-[#1a5c3a] px-6 py-3 rounded-lg font-medium transition"
               >
                 Call +91 96638 07006
@@ -191,13 +191,13 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919663807006"
+              href="https://wa.me/919663807008"
               className="bg-white text-[#1a5c3a] px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition"
             >
               WhatsApp Us
             </a>
             <a
-              href="tel:+919663807006"
+              href="tel:+919663807008"
               className="border-2 border-white text-white hover:bg-white hover:text-[#1a5c3a] px-6 py-3 rounded-lg font-medium transition"
             >
               Call Now

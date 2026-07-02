@@ -120,13 +120,13 @@ export default function AboutPage() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/919663807006"
+              href="https://wa.me/919663807008"
               className="bg-[#1a5c3a] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#154f32] transition"
             >
               WhatsApp Us
             </a>
             <a
-              href="tel:+919663807006"
+              href="tel:+919663807008"
               className="border-2 border-[#1a5c3a] text-[#1a5c3a] px-6 py-3 rounded-lg font-medium hover:bg-[#1a5c3a] hover:text-white transition"
             >
               Call +91 96638 07006

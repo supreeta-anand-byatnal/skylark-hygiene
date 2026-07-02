@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
         </svg>
       </a>
       <a
-        href="https://wa.me/919663807006?text=Hi, I'd like to enquire about your hygiene products."
+        href="https://wa.me/919663807008?text=Hi, I'd like to enquire about your hygiene products."
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#25D366] hover:bg-[#20bd5a] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110 active:scale-105"

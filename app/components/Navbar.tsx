@@ -65,7 +65,7 @@ export default function Navbar() {
             📥 Download Brochure
           </a>
           <a
-            href="https://wa.me/919663807006"
+            href="https://wa.me/919663807008"
             className="bg-[#1a5c3a] text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-[#154f32] transition"
           >
             Get Quote
@@ -115,7 +115,7 @@ export default function Navbar() {
             📥 Download Brochure
           </a>
           <a
-            href="https://wa.me/919663807006"
+            href="https://wa.me/919663807008"
             className="block mt-2 text-center bg-[#1a5c3a] text-white text-sm px-4 py-2.5 rounded-lg font-medium"
           >
             Get Quote on WhatsApp

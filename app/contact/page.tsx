@@ -37,7 +37,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-800">Phone</h3>
                     <a
-                      href="tel:+919663807006"
+                      href="tel:+919663807008"
                       className="text-[#1a5c3a] hover:underline font-medium"
                     >
                       +91 96638 07006
@@ -55,7 +55,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-800">WhatsApp</h3>
                     <a
-                      href="https://wa.me/919663807006"
+                      href="https://wa.me/919663807008"
                       className="text-[#1a5c3a] hover:underline font-medium"
                     >
                       Message us on WhatsApp
@@ -114,7 +114,7 @@ export default function ContactPage() {
                   ].map((product) => (
                     <a
                       key={product}
-                      href={`https://wa.me/919663807006?text=Hi, I'm interested in ${product}. Please share details and pricing.`}
+                      href={`https://wa.me/919663807008?text=Hi, I'm interested in ${product}. Please share details and pricing.`}
                       className="border border-gray-300 text-gray-700 px-3 py-1.5 rounded-full text-sm hover:border-[#1a5c3a] hover:text-[#1a5c3a] active:border-[#1a5c3a] active:text-[#1a5c3a] active:bg-[#1a5c3a]/10 transition"
                     >
                       {product}
@@ -220,7 +220,7 @@ export default function ContactPage() {
                 <p className="text-xs text-gray-400 text-center">
                   Or directly message us on{" "}
                   <a
-                    href="https://wa.me/919663807006"
+                    href="https://wa.me/919663807008"
                     className="text-[#1a5c3a] underline"
                   >
                     WhatsApp
