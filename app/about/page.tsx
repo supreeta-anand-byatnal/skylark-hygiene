@@ -129,7 +129,7 @@ export default function AboutPage() {
               href="tel:+919663807008"
               className="border-2 border-[#1a5c3a] text-[#1a5c3a] px-6 py-3 rounded-lg font-medium hover:bg-[#1a5c3a] hover:text-white transition"
             >
-              Call +91 96638 07006
+              Call +91 96638 07008
             </a>
           </div>
         </div>

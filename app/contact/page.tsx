@@ -40,7 +40,7 @@ export default function ContactPage() {
                       href="tel:+919663807008"
                       className="text-[#1a5c3a] hover:underline font-medium"
                     >
-                      +91 96638 07006
+                      +91 96638 07008
                     </a>
                     <p className="text-gray-500 text-sm mt-1">
                       Mon - Sat, 9:00 AM - 7:00 PM

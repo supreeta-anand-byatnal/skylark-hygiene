@@ -96,7 +96,7 @@ export default function Home() {
                 href="tel:+919663807008"
                 className="border-2 border-white text-white hover:bg-white hover:text-[#1a5c3a] px-6 py-3 rounded-lg font-medium transition"
               >
-                Call +91 96638 07006
+                Call +91 96638 07008
               </a>
             </div>
             <div className="flex flex-wrap gap-4 mt-6 text-sm text-green-200">
