@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   description:
     "Supplying dustbins, dispensers, hand dryers, air curtains, housekeeping trolleys and hygiene solutions for offices, hospitals, apartments, hotels and industries across India.",
   metadataBase: new URL("https://skylarkhygiene.com"),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
     title: "Skylark Hygiene Solutions",
     description:
